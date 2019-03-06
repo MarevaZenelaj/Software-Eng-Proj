@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/styles.css">
+        <title>PetCare</title>
+    </head>
+
+      <body>
+        <div class="navbar">
+  <a href="/home" class="homee" >Home</a>
+
+  <a href="/about" class="right_">About</a>
+            <a href="/payment" class="right_">Wallet</a>
+  <div class="dropdownmenu">
+      <button class="dropbutton">Profile</button>
+    <div class="dropdownmenu-content">
+      <a href="/profile">Open Profile</a>
+      <a href="/editprofile">Edit Profile</a>
+      <a href="/login">Log Out</a>
+    </div>
+
+  </div>
+
+</div>
+        <div class="div_main">
+            <div class="divmajtas">
+                <div class="divup">
+                    <img src="../static/images/profile_pic.png">
+                </div>
+                <div class="divdown1">
+                    <a class="profinfolink" href="/profile"><h1 class="profinfo">Profile Information</h1></a>
+                    <table class="table">
+                        <tr class="tr">
+                            <td class="td_th">Name:</td>
+                            <td class="td_th">{{name}}</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td_th">Surname:</td>
+                            <td class="td_th">{{surname}}</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td_th">Birth date:</td>
+                            <td class="td_th">{{birthday}}</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td_th">Nationality:</td>
+                            <td class="td_th">{{nationality}}</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td_th">E-mail:</td>
+                            <td class="td_th">{{email}}</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td_th">Tel:</td>
+                            <td class="td_th">{{tel}}</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td_th">Role:</td>
+                            <td class="td_th">{{role}}</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="divdjathtas">
+
+                </div>
+            </div>
+
+    </body>
+
+</html>

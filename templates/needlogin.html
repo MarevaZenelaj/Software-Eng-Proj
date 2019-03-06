@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+		background: #c4c4c4;
+	}
+	.login {
+		margin: 20px auto;
+		width: 300px;
+		padding: 30px 25px;
+		background: white;
+		border: 1px solid #c4c4c4;
+	}
+
+	h1.login-title {
+		margin: -30px -25px 25px;
+		padding: 15px 25px;
+		line-height: 30px;
+		font-size: 25px;
+		font-weight: 300;
+		color: #daa520;
+		text-align:center;
+		background: #2f4f4f;
+
+	}
+
+	.login-input {
+		width: 285px;
+		height: 50px;
+		margin-top: 20px;
+		padding-left:10px;
+		font-size: 15px;
+		background: #fff;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+	.login-input:focus {
+		border-color:#6e8095;
+		outline: none;
+	}
+	.login-button {
+		width: 100%;
+		height: 50px;
+		padding: 0;
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		background: #daa520;
+		border: 0;
+		border-radius: 5px;
+		cursor: pointer;
+		outline:0;
+	}
+
+	.login-lost
+	{
+	  text-align:center;
+	  margin-bottom:0px;
+	}
+
+	.login-lost a
+	{
+	  color:#666;
+	  text-decoration:none;
+	  font-size:13px;
+	}
+
+	.popup
+	{
+	    text-align: center;
+	    color: red;
+	    font-size:15px;
+	}
+</style>
+</head>
+	<form action="/check_login_info" method="get" class="login">
+	<h1 class="login-title">Welcome to PetCare</h1>
+	<img src="../static/images/logoo.jpeg"  style="width:50px;height:60px;	padding-left:120px;">
+	<input type="text" class="login-input"  name="email" placeholder="email" autofocus required>
+	<input type="password" class="login-input" placeholder="password" name="password" required>
+        <p class="popup">You need to log in first.</p>
+
+	<p><input type="submit" value="Login" class="login-button" /></p>
+
+	<p class="login-lost"> <a href="/signup">No Account? Sign Up</a></p>
+	</form>
+
+</html>
